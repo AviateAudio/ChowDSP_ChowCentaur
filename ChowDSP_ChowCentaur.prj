@@ -1,0 +1,158 @@
+{
+  "efxFileVersion": "1.0.0",
+  "company": "ChowDSP",
+  "effectName": "ChowCentaur",
+  "effectVersion": "1.0.0",
+  "coreVersion": "1.1.0",
+  "effectShortName": "CEN",
+  "effectCategory": "Overdrive",
+  "effectDescription": "A digital emulation of the public circuit for the Klon Centaur.",
+  "numInputs": 1,
+  "numOutputs": 1,
+  "numControls": 6,
+  "effectFilename": "ChowDSP_ChowCentaur.efx",
+  "libraryName": "ChowDSP_ChowCentaur",
+  "cppClass": "ChowDSP_ChowCentaur::ChowCentaur",
+  "cppInstBase": "_ChowDSP_ChowCentaur",
+  "constructorParams": "",
+  "controls": [
+    {
+      "name": "Bypass",
+      "shortName": "BYP",
+      "description": "Bypasses the effect when enabled.",
+      "config": [
+        0,
+        0.0,
+        1.0,
+        0.0,
+        1.0
+      ],
+      "iconOn": "gfx\\CentuarStompUp.png",
+      "iconOnHeight": 128,
+      "iconOff": "gfx\\CentaurStompDown.png",
+      "iconOffHeight": 128,
+      "position": [
+        676,
+        616
+      ],
+      "scalingRatio": 0.800000011920929,
+      "userData": 1
+    },
+    {
+      "name": "Volume",
+      "shortName": "VOL",
+      "description": "Sets the effect output volume.",
+      "config": [
+        3,
+        0.0,
+        10.0,
+        7.0,
+        0.1000000014901161
+      ],
+      "iconPot": "gfx\\knobs.png",
+      "iconPotHeight": 128,
+      "position": [
+        844,
+        172
+      ],
+      "scalingRatio": 2.099999904632568,
+      "supressValueLabel": 1,
+      "userData": 0
+    },
+    {
+      "name": "Gain",
+      "shortName": "GAIN",
+      "description": "Sets the level of overdrive. At lower settings more of the clean signal is mixed in.",
+      "config": [
+        3,
+        0.0,
+        10.0,
+        8.600000381469727,
+        0.1000000014901161
+      ],
+      "iconPot": "gfx\\knobs.png",
+      "iconPotHeight": 128,
+      "position": [
+        185,
+        172
+      ],
+      "scalingRatio": 2.099999904632568,
+      "supressValueLabel": 1,
+      "userData": 0
+    },
+    {
+      "name": "Treble",
+      "shortName": "TREB",
+      "description": "Flat to 400 Hz, then boosts or cuts based on knob setting.",
+      "config": [
+        3,
+        0.0,
+        10.0,
+        6.199999809265137,
+        0.1000000014901161
+      ],
+      "iconPot": "gfx\\knobs.png",
+      "iconPotHeight": 128,
+      "potFullRange": 1,
+      "position": [
+        510,
+        172
+      ],
+      "scalingRatio": 2.099999904632568,
+      "supressValueLabel": 1,
+      "userData": 0
+    },
+    {
+      "name": "Model Input Buf",
+      "shortName": "MIDB",
+      "description": "When enabled, the input buffer is modelled. While the modelling is accurate, it has little effect on tone.",
+      "config": [
+        0,
+        0.0,
+        1.0,
+        0.0,
+        1.0
+      ],
+      "userData": 0
+    },
+    {
+      "name": "Model Output Buf",
+      "shortName": "MOB",
+      "description": "When enabled, the output buffer is modelled.",
+      "config": [
+        0,
+        0.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "userData": 0
+    }
+  ],
+  "projectFileVersion": "1.0.0",
+  "companyLogo": "gfx\\ChowDSP_logo.png",
+  "pedalIcon": "gfx\\ChowCenaturIcon.png",
+  "basePedal": "gfx\\ChowCentaurBase.png",
+  "publicHeaderFiles": [
+    "inc\\ChowCentaur.h"
+  ],
+  "privateSourceFiles": [
+    "src\\AmpStage.h",
+    "src\\AudioFilterBiquad.cpp",
+    "src\\AudioFilterBiquad.h",
+    "src\\ChowCentaur.cpp",
+    "src\\ChowCentaurBase.cpp",
+    "src\\ClippingStage.h",
+    "src\\FeedForward2.h",
+    "src\\FF1Current.h",
+    "src\\InputBuffer.h",
+    "src\\omega.h",
+    "src\\OutputBuffer.h",
+    "src\\PreAmpStage.h",
+    "src\\SummingAmp.h",
+    "src\\ToneControl.h",
+    "src\\wdf.h",
+    "src\\wdf_double.h",
+    "src\\wdf_template.h"
+  ]
+}
