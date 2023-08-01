@@ -9,6 +9,7 @@ Build the project using the Multiverse Effect Creator tool, then add the generat
 
 **Audio Effect Author:**
 Jatin Chowdhury
+
 www.chowdsp.com
 
 ![image info](./ChowCentaur.png)
